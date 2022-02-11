@@ -1,6 +1,6 @@
-// @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:movie_reccomandation_app/Components/drawer.dart';
 import 'package:movie_reccomandation_app/Components/theme_const.dart';
 import 'package:movie_reccomandation_app/Components/theme_manager.dart';
 import 'Components/HomePage.dart';
@@ -60,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AppDrawer(),
       appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
